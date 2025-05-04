@@ -11,8 +11,8 @@ interface AudioPlayerProps {
   src: string
 }
 
+export function AudioPlayer({ title, description, src }: AudioPlayerProps) {
 
-export function AudioPlayer({ title, description }: AudioPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false)
   const [duration, setDuration] = useState(0)
   const [currentTime, setCurrentTime] = useState(0)
