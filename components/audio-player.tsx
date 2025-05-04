@@ -8,7 +8,9 @@ import { Play, Pause, Volume2, VolumeX } from "lucide-react"
 interface AudioPlayerProps {
   title: string
   description: string
+  src: string
 }
+
 
 export function AudioPlayer({ title, description }: AudioPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -100,7 +102,7 @@ export function AudioPlayer({ title, description }: AudioPlayerProps) {
       </div>
 
       {/* Hidden audio element - in a real implementation, this would have a src */}
-      <audio ref={audioRef} preload="metadata" aria-hidden="true">
+      <audio ref={audioRef} preload="metadata" src={src}>
         <p>Tu navegador no soporta el elemento de audio.</p>
       </audio>
 
