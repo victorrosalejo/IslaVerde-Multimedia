@@ -6,32 +6,32 @@ export default function Gallery() {
   // Array of gallery images with descriptions
   const galleryImages = [
     {
-      src: "/placeholder.svg?height=600&width=800",
+      src: "/1.svg?height=600&width=800",
       alt: "Playa principal de Isla Verde con palmeras y aguas turquesas",
       title: "Playa Principal",
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
+      src: "/2.svg?height=600&width=800",
       alt: "Sendero ecológico a través de la selva tropical de Isla Verde",
       title: "Sendero Ecológico",
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
+      src: "/3.svg?height=600&width=800",
       alt: "Festival cultural con bailarines locales en trajes tradicionales",
       title: "Festival Cultural",
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
+      src: "/4.svg?height=600&width=800",
       alt: "Cascada natural en el corazón de la montaña de Isla Verde",
       title: "Cascada Natural",
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
+      src: "/5.svg?height=600&width=800",
       alt: "Mercado local con artesanías y productos típicos de Isla Verde",
       title: "Mercado Local",
     },
     {
-      src: "/placeholder.svg?height=600&width=800",
+      src: "/6.svg?height=600&width=800",
       alt: "Vista aérea del pueblo principal de Isla Verde con sus casas coloridas",
       title: "Pueblo Principal",
     },
