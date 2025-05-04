@@ -70,28 +70,23 @@ export default function Gallery() {
         </section>
 
         {/* Video Section */}
-        <section aria-labelledby="video-heading" className="mb-16">
-          <h2 id="video-heading" className="text-2xl font-semibold mb-6">
-            Video Promocional
-          </h2>
-          <Card>
-            <CardContent className="p-6">
-              <div className="aspect-video bg-slate-100 dark:bg-slate-800 rounded-lg flex items-center justify-center">
-                <div className="text-center p-8">
-                  <p className="mb-4">Video promocional de Isla Verde</p>
-                  <p className="text-sm text-slate-500 dark:text-slate-400">
-                    Este es un video promocional que muestra las bellezas naturales y culturales de Isla Verde. El video
-                    incluye subtítulos en español e inglés para mayor accesibilidad.
-                  </p>
-                  <p className="mt-4 text-sm">
-                    <strong>Nota:</strong> En un sitio real, aquí se mostraría un video con controles de reproducción y
-                    subtítulos completos según las normas WCAG 2.2.
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+    <section aria-labelledby="video-heading" className="mb-16">
+      <h2 id="video-heading" className="text-2xl font-semibold mb-6">
+        Video Promocional
+      </h2>
+      <Card>
+        <CardContent className="p-6">
+          <video
+            controls
+            className="w-full max-w-3xl mx-auto rounded-xl shadow-lg"
+          >
+            <source src="/video/tour.mp4" type="video/mp4" />
+            Tu navegador no soporta el video.
+          </video>
+        </CardContent>
+      </Card>
+    </section>
+
 
         {/* Audio Section */}
         <section aria-labelledby="audio-heading">
@@ -106,9 +101,10 @@ export default function Gallery() {
                 de Isla Verde.
               </p>
               <AudioPlayer
-                title="Sonidos de la naturaleza de Isla Verde"
-                description="Audio ambiental con sonidos de olas, pájaros y brisa tropical"
-              />
+              title="Sonidos de la naturaleza de Isla Verde"
+              description="Audio ambiental con sonidos de olas, pájaros y brisa tropical"
+              src="/audio/tour.mp3"
+            />
             </CardContent>
           </Card>
         </section>
