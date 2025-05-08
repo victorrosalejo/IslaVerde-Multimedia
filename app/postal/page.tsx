@@ -249,7 +249,7 @@ export default function PostcardForm() {
                 </div>
 
                 <CardFooter className="flex justify-end px-0 pt-6">
-                  <Button type="submit" className="bg-emerald-600 hover:bg-emerald-700">
+                  <Button type="submit" className="bg-emerald-700 hover:bg-emerald-800">
                     Enviar Postal
                   </Button>
                 </CardFooter>

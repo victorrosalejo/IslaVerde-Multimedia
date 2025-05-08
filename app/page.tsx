@@ -180,7 +180,11 @@ export default function Home() {
               asChild
               size="lg"
               variant="outline"
-              className="bg-white text-emerald-600 border-white hover:bg-white/90"
+              className="
+                bg-white
+                text-emerald-700 border-emerald-700 
+                hover:bg-white/90 hover:text-emerald-800 hover:border-emerald-800
+              "
             >
               <Link href="/galeria">Ver Galería</Link>
             </Button>
