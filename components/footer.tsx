@@ -83,7 +83,6 @@ export default function Footer() {
             <a
               href="https://www.w3.org/WAI/WCAG2AA-Conformance"
               className="inline-block"
-              aria-label="Conformidad con WCAG 2.2 Nivel AA"
             >
               <span className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-emerald-900 text-emerald-300">
                 WCAG 2.2 AA
