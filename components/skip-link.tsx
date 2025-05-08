@@ -31,7 +31,7 @@ export function SkipLink() {
       onClick={handleClick}
       className={`
         fixed top-4 left-4 z-50 bg-emerald-600 text-white px-4 py-2 rounded-md
-        transition-transform duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white
+        transition-transform duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300
         ${isVisible ? "transform-none" : "transform -translate-y-16"}
       `}
     >
