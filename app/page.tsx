@@ -113,7 +113,7 @@ export default function Home() {
                 La comunidad local te recibirá con los brazos abiertos, compartiendo sus tradiciones, gastronomía y
                 artesanías que han pasado de generación en generación.
               </p>
-              <Button asChild className="bg-emerald-600 hover:bg-emerald-700">
+              <Button asChild className="bg-emerald-700 hover:bg-emerald-800">
                 <Link href="/galeria" className="inline-flex items-center">
                   Conoce más sobre nosotros
                   <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
