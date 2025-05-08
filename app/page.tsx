@@ -37,7 +37,7 @@ export default function Home() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="bg-white/10 backdrop-blur-sm text-white border-white hover:bg-white/20 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-300"
+                className="bg-gray-800 backdrop-blur-sm text-white border-white hover:bg-gray-700 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-300"
               >
                 <Link href="/postal">Enviar Postal</Link>
               </Button>
