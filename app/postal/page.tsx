@@ -162,6 +162,7 @@ export default function PostcardForm() {
                       aria-required="true"
                       aria-invalid={!!errors.name}
                       aria-describedby={errors.name ? "name-error" : undefined}
+                      className="border-gray-400 focus:border-gray-600"
                     />
                     {errors.name && (
                       <Alert variant="destructive" className="py-2">
@@ -185,6 +186,7 @@ export default function PostcardForm() {
                       aria-required="true"
                       aria-invalid={!!errors.email}
                       aria-describedby={errors.email ? "email-error" : undefined}
+                      className="border-gray-400 focus:border-gray-600"
                     />
                     {errors.email && (
                       <Alert variant="destructive" className="py-2">
