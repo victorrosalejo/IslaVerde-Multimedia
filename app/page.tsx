@@ -22,11 +22,11 @@ export default function Home() {
         </div>
 
         <div className="container relative z-10 px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 id="hero-heading" className="text-4xl md:text-6xl font-bold mb-4">
+          <div className="max-w-3xl mx-auto text-center bg-white py-12">
+            <h1 id="hero-heading" className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">
               Bienvenido a Isla Verde
             </h1>
-            <p className="text-xl md:text-2xl mb-8">
+            <p className="text-xl md:text-2xl mb-8 text-gray-800">
               Un paraíso tropical donde la naturaleza y la cultura se encuentran
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
