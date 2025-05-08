@@ -127,6 +127,7 @@ export function AudioPlayer({ title, description, src }: AudioPlayerProps) {
 
         <div className="flex-1">
           <Slider
+            role="slider"
             value={[currentTime]}
             max={duration}
             step={1}
@@ -152,6 +153,7 @@ export function AudioPlayer({ title, description, src }: AudioPlayerProps) {
 
         <div className="w-24">
           <Slider
+            role="slider"
             value={[isMuted ? 0 : volume]}
             max={1}
             step={0.01}
