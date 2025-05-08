@@ -22,7 +22,7 @@ export default function Home() {
         </div>
 
         <div className="container relative z-10 px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center bg-white py-12">
+          <div className="max-w-3xl mx-auto text-center py-12">
             <h1 id="hero-heading" className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">
               Bienvenido a Isla Verde
             </h1>
