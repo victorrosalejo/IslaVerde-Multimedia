@@ -128,12 +128,16 @@ export function AudioPlayer({ title, description, src }: AudioPlayerProps) {
         <div className="flex-1">
           <Slider
             role="slider"
+            tabIndex={0}
             value={[currentTime]}
             max={duration}
             step={1}
             onValueChange={changeRange}
             aria-label="Progreso de audio"
             aria-valuetext={`${formatTime(currentTime)} de ${formatTime(duration)}`}
+            aria-valuemin={0}
+            aria-valuemax={duration}
+            aria-valuenow={currentTime}
           />
         </div>
 
@@ -154,12 +158,16 @@ export function AudioPlayer({ title, description, src }: AudioPlayerProps) {
         <div className="w-24">
           <Slider
             role="slider"
+            tabIndex={0}
             value={[isMuted ? 0 : volume]}
             max={1}
             step={0.01}
             onValueChange={changeVolume}
             aria-label="Volumen"
             aria-valuetext={`Volumen ${Math.round(volume * 100)}%`}
+            aria-valuemin={0}
+            aria-valuemax={duration}
+            aria-valuenow={currentTime}
           />
         </div>
       </div>
