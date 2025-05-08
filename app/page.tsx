@@ -168,11 +168,11 @@ export default function Home() {
 
       {/* CTA Section */}
       <section aria-labelledby="cta-heading" className="py-16 bg-emerald-600 text-white">
-        <div className="container px-4 md:px-6 text-center">
+        <div className="container px-4 md:px-6 text-center bg-emerald-800">
           <h2 id="cta-heading" className="text-3xl font-bold mb-6">
             ¿Listo para vivir la experiencia Isla Verde?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-white">
             Planifica tu visita ahora y descubre por qué somos el destino preferido de miles de viajeros cada año.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
