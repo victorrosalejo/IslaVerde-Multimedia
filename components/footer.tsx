@@ -12,7 +12,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
+            <h3 className="text-lg font-semibold mb-4">Tabla de contenidos</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-slate-300 hover:text-emerald-400 transition-colors">
