@@ -31,7 +31,7 @@ export default function Home() {
               Un paraíso tropical donde la naturaleza y la cultura se encuentran
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-emerald-700 underline hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300">
+              <Button asChild size="lg" className="bg-emerald-700 hover:underline hover:bg-emerald-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300">
                 <Link href="/galeria">Explorar Galería</Link>
               </Button>
               <Button
