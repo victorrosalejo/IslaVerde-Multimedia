@@ -69,24 +69,44 @@ export default function Gallery() {
           </div>
         </section>
 
+        
         {/* Video Section */}
-    <section aria-labelledby="video-heading" className="mb-16">
-      <h2 id="video-heading" className="text-2xl font-semibold mb-6">
-        Video Promocional
-      </h2>
-      <Card>
-        <CardContent className="p-6">
-          <video
-            controls
-            className="w-full max-w-3xl mx-auto rounded-xl shadow-lg"
-          >
-            <source src="/video/tour.mp4" type="video/mp4" />
-            Tu navegador no soporta el video.
-          </video>
-        </CardContent>
-      </Card>
-    </section>
+        <section aria-labelledby="video-heading" className="mb-16">
+          <h2 id="video-heading" className="text-2xl font-semibold mb-6">
+            Video Promocional
+          </h2>
+          <p className="mb-4 text-gray-700">
+            Descubre las maravillas naturales y culturales que hacen de las Islas Canarias un destino único. Este vídeo es un recorrido sensorial por sus paisajes, historias y tradiciones.
+          </p>
+          <Card>
+            <CardContent className="p-6">
+              <video
+                controls
+                className="w-full max-w-3xl mx-auto rounded-xl shadow-lg"
+              >
+                <source src="/video/tour.mp4" type="video/mp4" />
+                Tu navegador no soporta el video.
+              </video>
 
+              <div className="text-center mt-6">
+                <button
+                  onClick={() => setShowTranscript(!showTranscript)}
+                  className="text-blue-600 underline hover:text-blue-800"
+                >
+                  {showTranscript ? "Ocultar transcripción" : "Mostrar transcripción"}
+                </button>
+              </div>
+
+              {showTranscript && (
+                <div className="mt-4 bg-gray-100 p-4 rounded-md text-sm leading-relaxed">
+                  <p><strong>00:02</strong> Vivimos en un lugar excepcional rodeado de playas de todos los colores... Donde ves unas manos, nosotros vemos la posibilidad de hablar como los pájaros...</p>
+                  <p><strong>00:25</strong> Porque donde tú ves un árbol, nosotros vemos un héroe que salvó a todo un pueblo... Y donde ves un palo, nosotros vemos una forma única de volar...</p>
+                  <p><strong>00:53</strong> El verano más excepcional te espera en la Isla Verde</p>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </section>
 
         {/* Audio Section */}
         <section aria-labelledby="audio-heading">
