@@ -1,41 +1,45 @@
-import { Card, CardContent } from "@/components/ui/card"
-import Image from "next/image"
-import { AudioPlayer } from "@/components/audio-player"
+import React, { useState } from 'react'
+import { Card, CardContent } from '@/components/ui/card'
+import Image from 'next/image'
+import { AudioPlayer } from '@/components/audio-player'
 
 export default function Gallery() {
   // Array of gallery images with descriptions
   const galleryImages = [
     {
-      src: "/1.svg?height=600&width=800",
-      alt: "Playa principal de Isla Verde con palmeras y aguas turquesas",
-      title: "Playa Principal",
+      src: '/1.svg?height=600&width=800',
+      alt: 'Playa principal de Isla Verde con palmeras y aguas turquesas',
+      title: 'Playa Principal',
     },
     {
-      src: "/2.svg?height=600&width=800",
-      alt: "Sendero ecológico a través de la selva tropical de Isla Verde",
-      title: "Sendero Ecológico",
+      src: '/2.svg?height=600&width=800',
+      alt: 'Sendero ecológico a través de la selva tropical de Isla Verde',
+      title: 'Sendero Ecológico',
     },
     {
-      src: "/3.svg?height=600&width=800",
-      alt: "Festival cultural con bailarines locales en trajes tradicionales",
-      title: "Festival Cultural",
+      src: '/3.svg?height=600&width=800',
+      alt: 'Festival cultural con bailarines locales en trajes tradicionales',
+      title: 'Festival Cultural',
     },
     {
-      src: "/4.svg?height=600&width=800",
-      alt: "Cascada natural en el corazón de la montaña de Isla Verde",
-      title: "Cascada Natural",
+      src: '/4.svg?height=600&width=800',
+      alt: 'Cascada natural en el corazón de la montaña de Isla Verde',
+      title: 'Cascada Natural',
     },
     {
-      src: "/5.svg?height=600&width=800",
-      alt: "Mercado local con artesanías y productos típicos de Isla Verde",
-      title: "Mercado Local",
+      src: '/5.svg?height=600&width=800',
+      alt: 'Mercado local con artesanías y productos típicos de Isla Verde',
+      title: 'Mercado Local',
     },
     {
-      src: "/6.svg?height=600&width=800",
-      alt: "Vista aérea del pueblo principal de Isla Verde con sus casas coloridas",
-      title: "Pueblo Principal",
+      src: '/6.svg?height=600&width=800',
+      alt: 'Vista aérea del pueblo principal de Isla Verde con sus casas coloridas',
+      title: 'Pueblo Principal',
     },
   ]
+
+  const [showTranscript, setShowTranscript] = useState(false)
+  const toggleTranscript = () => setShowTranscript(prev => !prev)
 
   return (
     <main id="main-content" className="min-h-screen py-12">
@@ -54,14 +58,16 @@ export default function Gallery() {
                   <figure>
                     <div className="relative h-64 w-full">
                       <Image
-                        src={image.src || "/placeholder.svg"}
+                        src={image.src || '/placeholder.svg'}
                         alt={image.alt}
                         fill
                         className="object-cover"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                     </div>
-                    <figcaption className="p-4 text-center font-medium">{image.title}</figcaption>
+                    <figcaption className="p-4 text-center font-medium">
+                      {image.title}
+                    </figcaption>
                   </figure>
                 </CardContent>
               </Card>
@@ -69,24 +75,59 @@ export default function Gallery() {
           </div>
         </section>
 
-        {/* Video Section */}
-    <section aria-labelledby="video-heading" className="mb-16">
-      <h2 id="video-heading" className="text-2xl font-semibold mb-6">
-        Video Promocional
-      </h2>
-      <Card>
-        <CardContent className="p-6">
-          <video
-            controls
-            className="w-full max-w-3xl mx-auto rounded-xl shadow-lg"
-          >
-            <source src="/video/tour.mp4" type="video/mp4" />
-            Tu navegador no soporta el video.
-          </video>
-        </CardContent>
-      </Card>
-    </section>
+        {/* Video Section with Accessible Transcript */}
+        <section aria-labelledby="video-heading" className="mb-16">
+          <h2 id="video-heading" className="text-2xl font-semibold mb-6">
+            Video Promocional
+          </h2>
 
+          {/* Breve descripción para context */}
+          <p id="video-description" className="mb-4 text-base leading-relaxed">
+            Aquí puedes incluir una breve descripción del contenido del video para dar contexto a todos los usuarios.
+          </p>
+
+          <Card>
+            <CardContent className="p-6">
+              <video
+                controls
+                className="w-full max-w-3xl mx-auto rounded-xl shadow-lg"
+                aria-describedby="video-description"
+              >
+                <source src="/video/tour.mp4" type="video/mp4" />
+                Tu navegador no soporta el video.
+              </video>
+
+              {/* Botón para mostrar/ocultar transcripción */}
+              <button
+                onClick={toggleTranscript}
+                aria-expanded={showTranscript}
+                aria-controls="video-transcript"
+                className="mt-4 px-4 py-2 rounded-lg font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                {showTranscript ? 'Ocultar transcripción' : 'Mostrar transcripción'}
+              </button>
+
+              {/* Transcripción accesible */}
+              <div
+                id="video-transcript"
+                role="region"
+                aria-labelledby="transcript-heading"
+                hidden={!showTranscript}
+                className="mt-4 p-4 bg-gray-50 rounded-lg shadow-inner"
+              >
+                <h3 id="transcript-heading" className="sr-only">
+                  Transcripción del video
+                </h3>
+                <p className="text-sm leading-relaxed">
+                  {/* Aquí va la transcripción completa del video, segmento por segmento */}
+                  [00:00] Bienvenidos al tour...<br />
+                  [00:10] Hoy exploraremos...<br />
+                  {/* ... */}
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
 
         {/* Audio Section */}
         <section aria-labelledby="audio-heading">
@@ -101,10 +142,10 @@ export default function Gallery() {
                 de Isla Verde.
               </p>
               <AudioPlayer
-              title="Sonidos de la naturaleza de Isla Verde"
-              description="Audio ambiental con sonidos de olas, pájaros y brisa tropical"
-              src="/audio/tour.mp3"
-            />
+                title="Sonidos de la naturaleza de Isla Verde"
+                description="Audio ambiental con sonidos de olas, pájaros y brisa tropical"
+                src="/audio/tour.mp3"
+              />
             </CardContent>
           </Card>
         </section>
