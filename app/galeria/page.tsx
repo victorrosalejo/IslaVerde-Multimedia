@@ -1,9 +1,15 @@
+"use client"
+
+import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import { AudioPlayer } from "@/components/audio-player"
 
+
 export default function Gallery() {
   // Array of gallery images with descriptions
+  const [showTranscript, setShowTranscript] = useState(false)
+
   const galleryImages = [
     {
       src: "/1.svg?height=600&width=800",
