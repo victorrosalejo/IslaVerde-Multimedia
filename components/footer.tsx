@@ -53,14 +53,17 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-slate-700 text-center text-slate-400">
           <p>© {new Date().getFullYear()} Isla Verde. Todos los derechos reservados.</p>
-          <div className="mt-4">
+          <div className="mt-4 flex justify-center">
             <a
               href="https://www.w3.org/WAI/WCAG2AA-Conformance"
-              className="inline-block"
+              title="Explanation of WCAG 2 Level AA conformance"
             >
-              <span className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-emerald-900 text-emerald-300">
-                WCAG 2.2 AA
-              </span>
+              <img
+                height="32"
+                width="88"
+                src="https://www.w3.org/WAI/WCAG22/wcag2.2AA"
+                alt="Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.2"
+              />
             </a>
           </div>
         </div>
