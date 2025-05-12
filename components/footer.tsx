@@ -66,11 +66,13 @@ export default function Footer() {
           </div>
           <div className="mt-4">
             <a href="https://www.w3.org/WAI/WCAG2AA-Conformance"
-              title="Explanation of WCAG 2 Level AA conformance">
-              <img height="32" width="88"
+              title="Explanation of WCAG 2 Level AA conformance"
+              >
+              <Image height="32" width="88"
                   src="https://www.w3.org/WAI/WCAG22/wcag2.2AA"
                   alt="Level AA conformance,
                         W3C WAI Web Content Accessibility Guidelines 2.2">
+              </Image>
             </a>
           </div>
         </div>
