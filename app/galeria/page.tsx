@@ -1,9 +1,15 @@
+"use client"
+
+import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import { AudioPlayer } from "@/components/audio-player"
 
+
 export default function Gallery() {
   // Array of gallery images with descriptions
+  const [showTranscript, setShowTranscript] = useState(false)
+
   const galleryImages = [
     {
       src: "/1.svg?height=600&width=800",
@@ -69,24 +75,46 @@ export default function Gallery() {
           </div>
         </section>
 
+        
         {/* Video Section */}
-    <section aria-labelledby="video-heading" className="mb-16">
-      <h2 id="video-heading" className="text-2xl font-semibold mb-6">
-        Video Promocional
-      </h2>
-      <Card>
-        <CardContent className="p-6">
-          <video
-            controls
-            className="w-full max-w-3xl mx-auto rounded-xl shadow-lg"
-          >
-            <source src="/video/tour.mp4" type="video/mp4" />
-            Tu navegador no soporta el video.
-          </video>
-        </CardContent>
-      </Card>
-    </section>
+        <section aria-labelledby="video-heading" className="mb-16">
+          <h2 id="video-heading" className="text-2xl font-semibold mb-6">
+            Video Promocional
+          </h2>
+          <p className="mb-4 text-gray-700">
+            Descubre las maravillas naturales y culturales que hacen de las Islas Canarias un destino único. Este vídeo es un recorrido sensorial por sus paisajes, historias y tradiciones.
+          </p>
+          <Card>
+            <CardContent className="p-6">
+              <video
+                controls
+                className="w-full max-w-3xl mx-auto rounded-xl shadow-lg"
+              >
+                <source src="/video/tour.mp4" type="video/mp4" />
+                Tu navegador no soporta el video.
+              </video>
 
+              <div className="text-center mt-6">
+                <button
+                  onClick={() => setShowTranscript(!showTranscript)}
+                  className="text-blue-600 underline hover:text-blue-800"
+                >
+                  {showTranscript ? "Ocultar transcripción" : "Mostrar transcripción"}
+                </button>
+              </div>
+
+              {showTranscript && (
+                <div className="mt-4 bg-gray-100 p-4 rounded-md text-sm leading-relaxed">
+                  <p><strong>00:02</strong> Vivimos en un lugar excepcional rodeado de playas de todos los colores.  Blancas, negras, rojas, doradas.  Y quizás por ello,  tenemos una manera diferente de ver las cosas.  Donde ves unas manos,  nosotros vemos la posibilidad de hablar como los pájaros.  Un paseo aquí  es un viaje a otros planetas con impresionantes paisajes de contraste.
+</p>
+                  <p><strong>00:25</strong> llenos de seres maravillosos.  Porque donde tú ves un árbol,  nosotros vemos un héroe que salvó a todo un pueblo.  Y donde ves un palo,  nosotros vemos una forma única de volar.  Aquí los volcanes se convierten en viñas de sabores incomparables.  ¿Y esto?  Esto no es un simple chapuzón.  Es sumergirse en el mejor regalo del océano.  Porque donde ves un buen día,  nosotros vemos el mejor clima del mundo,  también en verano.
+</p>
+                  <p><strong>00:53</strong> El verano más excepcional te espera  en las Islas Canarias.</p>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </section>
 
         {/* Audio Section */}
         <section aria-labelledby="audio-heading">
