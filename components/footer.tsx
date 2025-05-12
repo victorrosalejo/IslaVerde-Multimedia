@@ -49,21 +49,6 @@ export default function Footer() {
               </p>
             </address>
           </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Síguenos</h3>
-            <div className="flex space-x-4">
-              <a href="#" aria-label="Facebook" className="text-slate-300 hover:text-emerald-400 transition-colors">
-                <Facebook aria-hidden="true" />
-              </a>
-              <a href="#" aria-label="Instagram" className="text-slate-300 hover:text-emerald-400 transition-colors">
-                <Instagram aria-hidden="true" />
-              </a>
-              <a href="#" aria-label="Twitter" className="text-slate-300 hover:text-emerald-400 transition-colors">
-                <Twitter aria-hidden="true" />
-              </a>
-            </div>
-          </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-slate-700 text-center text-slate-400">
@@ -80,13 +65,12 @@ export default function Footer() {
             </Link>
           </div>
           <div className="mt-4">
-            <a
-              href="https://www.w3.org/WAI/WCAG2AA-Conformance"
-              className="inline-block"
-            >
-              <span className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-emerald-900 text-emerald-300">
-                WCAG 2.2 AA
-              </span>
+            <a href="https://www.w3.org/WAI/WCAG2AA-Conformance"
+              title="Explanation of WCAG 2 Level AA conformance">
+              <img height="32" width="88"
+                  src="https://www.w3.org/WAI/WCAG22/wcag2.2AA"
+                  alt="Level AA conformance,
+                        W3C WAI Web Content Accessibility Guidelines 2.2">
             </a>
           </div>
         </div>
