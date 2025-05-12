@@ -31,14 +31,14 @@ export default function Home() {
               Un paraíso tropical donde la naturaleza y la cultura se encuentran
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-emerald-700 hover:bg-emerald-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300">
+              <Button asChild size="lg" className="bg-emerald-700 hover:underline hover:bg-emerald-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300">
                 <Link href="/galeria">Explorar Galería</Link>
               </Button>
               <Button
                 asChild
                 size="lg"
                 variant="outline"
-                className="bg-gray-800 backdrop-blur-sm text-white border-white hover:bg-gray-700 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-300"
+                className="bg-gray-800 backdrop-blur-sm text-white border-white hover:underline hover:bg-gray-700 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-300"
               >
                 <Link href="/postal">Enviar Postal</Link>
               </Button>

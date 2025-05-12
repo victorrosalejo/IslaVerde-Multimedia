@@ -15,17 +15,17 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Tabla de contenidos</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                <Link href="/" className="text-slate-300 hover:underline hover:text-emerald-400 transition-colors">
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/galeria" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                <Link href="/galeria" className="text-slate-300 hover:underline hover:text-emerald-400 transition-colors">
                   Galería
                 </Link>
               </li>
               <li>
-                <Link href="/postal" className="text-slate-300 hover:text-emerald-400 transition-colors">
+                <Link href="/postal" className="text-slate-300 hover:underline hover:text-emerald-400 transition-colors">
                   Enviar Postal
                 </Link>
               </li>
@@ -38,12 +38,12 @@ export default function Footer() {
               <p>Calle Principal 123</p>
               <p>Isla Verde, Océano Pacífico</p>
               <p className="mt-2">
-                <a href="tel:+123456789" className="hover:text-emerald-400 transition-colors">
+                <a href="tel:+123456789" className="hover:underline hover:text-emerald-400 transition-colors">
                   Tel: +123 456 789
                 </a>
               </p>
               <p>
-                <a href="mailto:info@islaverde.ejemplo" className="hover:text-emerald-400 transition-colors">
+                <a href="mailto:info@islaverde.ejemplo" className="hover:underline hover:text-emerald-400 transition-colors">
                   info@islaverde.ejemplo
                 </a>
               </p>
