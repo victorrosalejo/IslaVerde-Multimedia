@@ -53,17 +53,6 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-slate-700 text-center text-slate-400">
           <p>© {new Date().getFullYear()} Isla Verde. Todos los derechos reservados.</p>
-          <div className="mt-2 flex justify-center space-x-4 text-sm">
-            <Link href="#" className="hover:text-emerald-400 transition-colors">
-              Política de Privacidad
-            </Link>
-            <Link href="#" className="hover:text-emerald-400 transition-colors">
-              Términos de Uso
-            </Link>
-            <Link href="#" className="hover:text-emerald-400 transition-colors">
-              Accesibilidad
-            </Link>
-          </div>
           <div className="mt-4">
             <a
               href="https://www.w3.org/WAI/WCAG2AA-Conformance"
