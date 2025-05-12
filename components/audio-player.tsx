@@ -119,9 +119,9 @@ export function AudioPlayer({ title, description, src }: AudioPlayerProps) {
           aria-label={isPlaying ? "Pausar" : "Reproducir"}
         >
           {isPlaying ? (
-            <Pause className="h-4 w-4" aria-hidden="true" />
+            <Pause className="h-4 w-4" aria-hidden="true" aria-label="10"/>
           ) : (
-            <Play className="h-4 w-4" aria-hidden="true" />
+            <Play className="h-4 w-4" aria-hidden="true" aria-label="11"/>
           )}
         </Button>
 
@@ -149,9 +149,9 @@ export function AudioPlayer({ title, description, src }: AudioPlayerProps) {
       <div className="flex items-center gap-2">
         <Button variant="ghost" size="icon" onClick={toggleMute} aria-label={isMuted ? "Activar sonido" : "Silenciar"}>
           {isMuted ? (
-            <VolumeX className="h-4 w-4" aria-hidden="true" />
+            <VolumeX className="h-4 w-4" aria-hidden="true" aria-label="12"/>
           ) : (
-            <Volume2 className="h-4 w-4" aria-hidden="true" />
+            <Volume2 className="h-4 w-4" aria-hidden="true" aria-label="13"/>
           )}
         </Button>
 

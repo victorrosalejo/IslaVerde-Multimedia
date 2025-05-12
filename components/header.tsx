@@ -71,9 +71,9 @@ export default function Header() {
             onClick={toggleMenu}
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6" aria-hidden="true" />
+              <X className="h-6 w-6" aria-hidden="true" aria-label="14"/>
             ) : (
-              <Menu className="h-6 w-6" aria-hidden="true" />
+              <Menu className="h-6 w-6" aria-hidden="true" aria-label="15"/>
             )}
           </Button>
         </div>

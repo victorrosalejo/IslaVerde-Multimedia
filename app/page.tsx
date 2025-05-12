@@ -17,8 +17,9 @@ export default function Home() {
             priority
             className="object-cover"
             sizes="100vw"
+            aria-label="Playas"
           />
-          <div className="absolute inset-0 bg-black/40" aria-hidden="true"></div>
+          <div className="absolute inset-0 bg-black/40" aria-hidden="true" aria-label="2"></div>
         </div>
 
         <div className="container relative z-10 px-4 md:px-6">
@@ -57,7 +58,7 @@ export default function Home() {
             <Card>
               <CardContent className="pt-6">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900">
-                  <MapPin className="h-5 w-5 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+                  <MapPin className="h-5 w-5 text-emerald-600 dark:text-emerald-400" aria-hidden="true" aria-label="1"/>
                 </div>
                 <h3 className="text-xl font-bold mb-2">Playas Paradisíacas</h3>
                 <p>
@@ -70,7 +71,7 @@ export default function Home() {
             <Card>
               <CardContent className="pt-6">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900">
-                  <Calendar className="h-5 w-5 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+                  <Calendar className="h-5 w-5 text-emerald-600 dark:text-emerald-400" aria-hidden="true" aria-label="3"/>
                 </div>
                 <h3 className="text-xl font-bold mb-2">Festivales Culturales</h3>
                 <p>
@@ -83,7 +84,7 @@ export default function Home() {
             <Card>
               <CardContent className="pt-6">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900">
-                  <Users className="h-5 w-5 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+                  <Users className="h-5 w-5 text-emerald-600 dark:text-emerald-400" aria-hidden="true" aria-label="4"/>
                 </div>
                 <h3 className="text-xl font-bold mb-2">Excursiones Guiadas</h3>
                 <p>
@@ -116,7 +117,7 @@ export default function Home() {
               <Button asChild className="bg-emerald-700 hover:bg-emerald-800">
                 <Link href="/galeria" className="inline-flex items-center">
                   Conoce más sobre nosotros
-                  <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                  <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" aria-label="5"/>
                 </Link>
               </Button>
             </div>
@@ -127,6 +128,7 @@ export default function Home() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                aria-label="Montañas"
               />
             </div>
           </div>
