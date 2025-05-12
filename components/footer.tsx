@@ -65,14 +65,13 @@ export default function Footer() {
             </Link>
           </div>
           <div className="mt-4">
-            <a href="https://www.w3.org/WAI/WCAG2AA-Conformance"
-              title="Explanation of WCAG 2 Level AA conformance"
-              >
-              <Image height="32" width="88"
-                  src="https://www.w3.org/WAI/WCAG22/wcag2.2AA"
-                  alt="Level AA conformance,
-                        W3C WAI Web Content Accessibility Guidelines 2.2">
-              </Image>
+            <a
+              href="https://www.w3.org/WAI/WCAG2AA-Conformance"
+              className="inline-block"
+            >
+              <span className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-emerald-900 text-emerald-300">
+                WCAG 2.2 AA
+              </span>
             </a>
           </div>
         </div>
