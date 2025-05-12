@@ -19,7 +19,7 @@ export default function Home() {
             sizes="100vw"
             aria-label="Playas"
           />
-          <div className="absolute inset-0 bg-black/40" aria-hidden="true" aria-label="2"></div>
+          <div className="absolute inset-0 bg-black/40" aria-hidden="true"></div>
         </div>
 
         <div className="container relative z-10 px-4 md:px-6">
