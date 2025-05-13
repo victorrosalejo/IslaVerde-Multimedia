@@ -68,7 +68,7 @@ export default function PostcardForm() {
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = "Por favor, introduce tu correo electrónico"
+      newErrors.email = "Por favor, introduce tu correo electrónico. Formato: email@organizacion.com"
     } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
       newErrors.email = "Por favor, introduce un correo electrónico válido. Formato: email@organizacion.com"
     }
