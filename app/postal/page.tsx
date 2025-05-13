@@ -62,7 +62,7 @@ export default function PostcardForm() {
     const newErrors: Record<string, string> = {}
 
     if (!formData.name.trim()) {
-      newErrors.name = "Por favor, introduce tu nombre"
+      newErrors.name = "Por favor, introduce tu nombre. Ej: Jose Andrés"
     }
 
     if (!formData.email.trim()) {
