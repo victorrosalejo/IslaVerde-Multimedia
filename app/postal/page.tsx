@@ -27,8 +27,10 @@ export default function PostcardForm() {
   const postcardImages = [
     { value: "playa", label: "Playa Principal" },
     { value: "cascada", label: "Cascada Natural" },
-    { value: "pueblo", label: "Pueblo Colorido" },
-    { value: "festival", label: "Festival Cultural" },
+    { value: "pueblo", label: "Mercado Local" },
+    { value: "sendero", label: "Sendero Ecológico" },
+      { value: "festival", label: "Festival Cultural" },
+        { value: "pueblo", label: "Pueblo Principal" },
   ]
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
