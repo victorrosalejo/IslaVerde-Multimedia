@@ -64,7 +64,7 @@ export default function PostcardForm() {
     const newErrors: Record<string, string> = {}
 
     if (!formData.name.trim()) {
-      newErrors.name = "Por favor, introduce tu nombre"
+      newErrors.name = "Por favor, introduce tu nombre. Ej: Jose Andrés"
     }
 
     if (!formData.email.trim()) {
@@ -127,7 +127,7 @@ export default function PostcardForm() {
           <Card>
             <CardHeader>
               <CardTitle className="text-center text-emerald-600">
-                <CheckCircle2 className="h-12 w-12 mx-auto mb-2" aria-hidden="true" />
+                <CheckCircle2 className="h-12 w-12 mx-auto mb-2" aria-hidden="true" aria-label="6"/>
                 ¡Postal Enviada!
               </CardTitle>
               <CardDescription className="text-center text-lg">Tu postal ha sido enviada con éxito</CardDescription>
@@ -153,7 +153,7 @@ export default function PostcardForm() {
                 <div className="grid gap-6">
                   <div className="grid gap-3">
                     <Label htmlFor="name" className="text-base">
-                      Nombre <span aria-hidden="true">*</span>
+                      Nombre <span aria-hidden="true" aria-label="6">*</span>
                       <span className="sr-only">obligatorio</span>
                     </Label>
                     <Input
@@ -175,7 +175,7 @@ export default function PostcardForm() {
 
                   <div className="grid gap-3">
                     <Label htmlFor="email" className="text-base">
-                      Correo Electrónico <span aria-hidden="true">*</span>
+                      Correo Electrónico <span aria-hidden="true" aria-label="7">*</span>
                       <span className="sr-only">obligatorio</span>
                     </Label>
                     <Input
@@ -198,7 +198,7 @@ export default function PostcardForm() {
 
                   <div className="grid gap-3">
                     <Label htmlFor="image-select" className="text-base">
-                      Selecciona una Imagen <span aria-hidden="true">*</span>
+                      Selecciona una Imagen <span aria-hidden="true" aria-label="8">*</span>
                       <span className="sr-only">obligatorio</span>
                     </Label>
                     <Select value={formData.image} onValueChange={handleSelectChange}>
@@ -228,7 +228,7 @@ export default function PostcardForm() {
 
                   <div className="grid gap-3">
                     <Label htmlFor="message" className="text-base">
-                      Mensaje <span aria-hidden="true">*</span>
+                      Mensaje <span aria-hidden="true" aria-label="9">*</span>
                       <span className="sr-only">obligatorio</span>
                     </Label>
                     <Textarea

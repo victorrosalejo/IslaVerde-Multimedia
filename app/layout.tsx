@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Isla Verde - Destino Turístico",
   description:
     "Descubre la belleza natural y cultural de Isla Verde, un paraíso tropical con playas cristalinas, montañas exuberantes y una rica herencia cultural.",
-    generator: 'v0.dev'
+    generator: 'Marcos Hernangil & Victor Arroyo'
 }
 
 export default function RootLayout({
