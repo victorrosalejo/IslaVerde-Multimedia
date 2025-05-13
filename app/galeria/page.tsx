@@ -105,8 +105,7 @@ export default function Gallery() {
 
               {showTranscript && (
                 <div className="mt-4 bg-gray-100 p-4 rounded-md text-sm leading-relaxed">
-                  <p><strong>00:02</strong> Vivimos en un lugar excepcional rodeado de playas de todos los colores.  Blancas, negras, rojas, doradas.  Y quizás por ello,  tenemos una manera diferente de ver las cosas.  Donde ves unas manos,  nosotros vemos la posibilidad de hablar como los pájaros.  Un paseo aquí  es un viaje a otros planetas con impresionantes paisajes de contraste.
-</p>
+                  <p><strong>00:02</strong> Vivimos en un lugar excepcional rodeado de playas de todos los colores.  Blancas, negras, rojas, doradas.  Y quizás por ello,  tenemos una manera diferente de ver las cosas.  Donde ves unas manos,  nosotros vemos la posibilidad de hablar como los pájaros.  Un paseo aquí  es un viaje a otros planetas con impresionantes paisajes de contraste.</p>
                   <p><strong>00:25</strong> llenos de seres maravillosos.  Porque donde tú ves un árbol,  nosotros vemos un héroe que salvó a todo un pueblo.  Y donde ves un palo,  nosotros vemos una forma única de volar.  Aquí los volcanes se convierten en viñas de sabores incomparables.  ¿Y esto?  Esto no es un simple chapuzón.  Es sumergirse en el mejor regalo del océano.  Porque donde ves un buen día,  nosotros vemos el mejor clima del mundo,  también en verano.
 </p>
                   <p><strong>00:53</strong> El verano más excepcional te espera  en las Islas Canarias.</p>
